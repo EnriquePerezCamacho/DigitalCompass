@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu guía en el laberinto digital</title>
+  <link rel="stylesheet" href="stylescurso.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <a href="index.html"><img src="assets/logo.png" alt="Logo" class="logo-image"></a>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="quienessosmos.html">Quiénes somos</a>
+      <a href="contacto.html">Contactar</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <h1>Formacion Profecisonal</h1>
+    <p class="subtitle">Aquí podrás ver las Formacion Profecisona que deseas</p>
+  </main>
+
+  <section class="buttons-section">
+    <div class="buttons-container">
+      <div class="building">
+        <img src="assets/fp1.jpg" alt="Universidad A" class="button" onclick="showUniversityInfo('A')">
+        <p class="building-name">Edificio A</p>
+      </div>
+      <div class="building">
+        <img src="assets/fp2.jpg" alt="Universidad B" class="button" onclick="showUniversityInfo('B')">
+        <p class="building-name">Edificio B</p>
+      </div>
+      <div class="building">
+        <img src="assets/fp3.jpg" alt="Universidad C" class="button" onclick="showUniversityInfo('C')">
+        <p class="building-name">Edificio C</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <div class="info-text" id="info-text"></div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Tu Guía en el Laberinto Digital. Todos los derechos reservados.</p>
+    <p>Creado con pasión para ayudarte a encontrar tu camino educativo.</p>
+  </footer>  
+
+  <script src="scriptcurso.js"></script>
+</body>
+</html>

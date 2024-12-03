@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  background-color: #2f507d;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 600px; /* Hacemos el logo más grande */
+}
+
+/* Estilo unificado del Nav */
+.nav {
+  display: flex;
+  gap: 20px; /* Espaciado uniforme entre los enlaces */
+  justify-content: flex-end; /* Alinear al extremo derecho */
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none; /* Sin subrayado */
+  color: white; /* Texto blanco */
+  font-family: 'Montserrat', sans-serif; /* Tipografía consistente */
+  font-size: 18px; /* Tamaño de fuente */
+  margin: 0 15px; /* Espaciado horizontal entre enlaces */
+  transition: color 0.3s ease; /* Efecto suave al pasar el cursor */
+}
+
+.nav a:hover {
+  color: #A9CCE3; /* Color claro al pasar el cursor */
+}
+
+/* Main Content */
+.main-content {
+  text-align: center;
+  background-color: #3f648c;
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Buttons Section */
+.buttons-section {
+  background-color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+  transition: all 0.3s ease;
+  justify-content: center; /* Centrar botones */
+}
+
+.button {
+  width: 250px; /* Hacemos las imágenes más grandes */
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.button img {
+  width: 100%;
+  border-radius: 10px; /* Bordes redondeados en las imágenes */
+}
+
+.button:hover {
+  transform: scale(1.05); /* Animación de agrandado al pasar el cursor */
+}
+
+/* Reorganización al mostrar información */
+.info-section {
+  display: none;
+  margin-top: 50px;
+  font-size: 18px;
+  color: #333;
+  padding: 20px;
+  display: flex; /* Permite colocar texto e imagen en fila */
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Espaciado entre el texto y las imágenes */
+}
+
+.info-text {
+  font-size: 20px;
+  color: #2f507d;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Mover botones abajo */
+.button-move {
+  transition: transform 0.5s ease;
+  transform: translateY(100px); /* Botones no seleccionados se mueven hacia abajo */
+}
+
+.button-show-text {
+  display: flex;
+  flex-direction: row; /* Coloca los botones y el texto en fila */
+  align-items: center;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2f507d;
+  color: white;
+}
