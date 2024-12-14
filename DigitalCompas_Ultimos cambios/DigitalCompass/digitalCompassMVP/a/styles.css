@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background-color: #2f507d;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container a {
+  display: block;
+}
+
+.logo-container img {
+  width: 500px;
+}
+
+.nav a {
+  margin-left: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+/* Main Content */
+.main-content {
+  text-align: center;
+  background-color: #2f507d;
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 300;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 30px;
+  font-weight: 200;
+}
+
+/* Buttons Section */
+.buttons-section {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;  /* Asegura que ocupe todo el espacio disponible */
+  padding: 0;
+  height: 100vh; /* Hace que la sección ocupe toda la altura de la pantalla */
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;  /* Centra los botones verticalmente */
+  align-items: center;      /* Centra los botones horizontalmente */
+  gap: 30px;  /* Espacio entre los botones */
+  margin-bottom: 6rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 120px;
+  background-color: #3F648C;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 200;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 15px;
+  border: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #4f769b;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.dropdown-content {
+  display: none; /* Ocultar el menú inicialmente */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  z-index: 1;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  opacity: 0; /* Inicialmente invisible */
+  transform: translateY(-20px); /* Empujar el menú hacia arriba */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Animación suave */
+  
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1; /* Mostrar el menú */
+  transform: translateY(0); /* Mover el menú a su posición normal */
+}
+
+.dropdown-content a {
+  color: #0b3766;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  font-weight: 700; /* Hacer que el texto esté en negrita */
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2f507d;
+  color: white;
+  font-weight: 200;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
