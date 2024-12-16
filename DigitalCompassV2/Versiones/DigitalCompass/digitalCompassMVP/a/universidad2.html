@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu guía en el laberinto digital</title>
+  <link rel="stylesheet" href="stylescurso.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <img src="assets/logo.png" alt="Logo" class="logo-image">
+    </div>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="quienessosmos.html">Quiénes somos</a>
+      <a href="#">Contactar</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <h1>Universidad</h1>
+    <p class="subtitle">Aquí podrás ver las universidades que deseas</p>
+  </main>
+
+  <section class="buttons-section">
+    <div class="buttons-container">
+      <div class="dropdown">
+        <img src="assets/curso1.png" alt="Universidad A" class="button" onclick="showUniversityInfo('A')">
+      </div>
+      <div class="dropdown">
+        <img src="assets/curso2.png" alt="Universidad B" class="button" onclick="showUniversityInfo('B')">
+      </div>
+      <div class="dropdown">
+        <img src="assets/curso3.png" alt="Universidad C" class="button" onclick="showUniversityInfo('C')">
+      </div>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <div class="info-text" id="info-text"></div>
+  </section>
+
+  <footer class="footer">
+    <p>footer works!</p>
+  </footer>
+
+  <script src="scriptcurso.js"></script>
+</body>
+</html>

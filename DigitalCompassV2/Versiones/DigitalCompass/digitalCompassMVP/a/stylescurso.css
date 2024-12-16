@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  background-color: #2f507d;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 500px;
+}
+
+.nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Main Content */
+.main-content {
+  text-align: center;
+  background-color: #3f648c;
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Buttons Section */
+.buttons-section {
+  background-color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+  transition: all 0.3s ease;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.button {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+/* University Info Section */
+.info-section {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  padding: 20px;
+  display: none;
+}
+
+.info-text {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #2f507d;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2f507d;
+  color: white;
+}
+
+/* To move other buttons down */
+.button-move {
+  transition: transform 0.5s ease;
+  transform: translateY(100px);
+}
+
+.button-show-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button-show-text .button {
+  margin-right: 20px;
+}
+
