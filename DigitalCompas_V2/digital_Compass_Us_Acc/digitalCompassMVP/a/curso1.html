@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu guía en el laberinto digital</title>
+   <!-- Agregar fuente Montserrat desde Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <img src="assets/logo.png" alt="Logo" class="logo-image">
+    </div>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="quienessosmos.html">Quiénes somos</a>
+      <a href="contacto.html">Contactar</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <h1>Cursos</h1>
+    <p class="subtitle">Aquí podrás ver las opciones de cursos que deseas</p>
+  </main>
+
+  <!-- Sección de botones y animaciones -->
+  <section class="buttons-section-curso">
+    <div class="buttons-container-curso">
+      <!-- Botones de las universidades -->
+      <div>
+        <img src="assets/curso1.png" alt="Universidad A" class="button-curso" onclick="showUniversityInfo('A')">
+      </div>
+      <div>
+        <img src="assets/curso2.png" alt="Universidad B" class="button-curso" onclick="showUniversityInfo('B')">
+      </div>
+      <div>
+        <img src="assets/curso3.png" alt="Universidad C" class="button-curso" onclick="showUniversityInfo('C')">
+      </div>
+    </div>
+    
+    <!-- Contenedor de la información -->
+    <div id="universityInfoContainer" class="info-container">
+      <div class="selected-image" id="selectedImage"></div>
+      <div class="info-text" id="infoText"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Tu Guía en el Laberinto Digital. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script de lógica de animación -->
+  <script src="scriptcurso.js"></script>
+</body>
+</html>
+
